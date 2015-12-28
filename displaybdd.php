@@ -12,7 +12,7 @@ function display_db($db)
 		foreach ($aff as $value)
 		{
 			?><li>
-			<a class="collapsible-header waves-effect waves-blue darken-1"><?php echo $value[0];?></a>
+			<a onclick="displaySelection('<?php echo "$value[0]";?>');" class="collapsible-header waves-effect waves-blue darken-1"><?php echo $value[0];?></a>
 			<div class="collapsible-body">
 				<ul>
 					<?php display_table($db, $value[0]);?>
@@ -31,7 +31,7 @@ function display_table($db, $dbname)
 	{
 		foreach ($aff as $value)
 		{
-			?> <li name=<?php echo "".$value[0]."";?>><?php echo $value[0];?></li>
+			?> <li name=<?php echo $value[0];?>><?php echo $value[0];?></li>
 			<?php
 		}
 	}

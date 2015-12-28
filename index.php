@@ -38,7 +38,7 @@
       <div id="mainbody" class="col s7">
         <div id="maindb">
         	<div id="selectdb">
-        		<h5 id="selection">Placeholder</h5>
+        		<h5 id="selection">Utilisez le menu de gauche pour naviguer<br /> dans les bases de données</h5>
         	</div>
         <div class="mainoption">
         	<i id="modifier" class="large material-icons">settings</i>

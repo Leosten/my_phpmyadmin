@@ -3,11 +3,13 @@ $(document).ready(function(){
       accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
     });
 
-
-
+$('.collapsible-header').click(function() {
+                $('#maindb').show(500);
+            })
   });
 
-function displayselection(name)
+function displaySelection(name)
 {
-	
+	tochange = document.getElementById("selection");
+	tochange.innerHTML = name;
 }

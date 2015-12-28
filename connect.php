@@ -14,7 +14,7 @@ class Database {
     private function __construct()
     {
         $this->connection = new PDO('mysql:host=localhost;charset=utf8', 'root', '');
-		//$this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
 
     function __destruct() 
