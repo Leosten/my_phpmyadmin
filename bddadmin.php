@@ -20,10 +20,15 @@ function add_db($db)
 		if ($db->query("CREATE DATABASE IF NOT EXISTS `$dbname`"))
 			echo "Base de donnée ".$dbname." crée";
 		else
-			echo "Erreur création base de donnée : ".$dbname.".";
+			echo "Erreur création base de donnée : ".$dbname." existe déjà.";
 	}
 	else
-		echo "Pas de nom de DB entré";
+		echo "Veuillez entrer un nom pour la base de données";
+}
+
+function erase_db($db)
+{
+	
 }
 ?>
       <!--  <div class="container">

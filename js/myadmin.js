@@ -4,7 +4,9 @@ $(document).ready(function(){
     });
 
 $('.collapsible-header').click(function() {
-                $('#maindb').show(500);
+                $('#maindb').toggle(500);
+                $('.tohide').toggle(500);
+                $('.result').toggle(500);
             })
   });
 
@@ -12,4 +14,10 @@ function displaySelection(name)
 {
 	tochange = document.getElementById("selection");
 	tochange.innerHTML = name;
+}
+
+function getDbName()
+{
+	dbname = getElementById("selection").innerHTML;
+	return (dbname);
 }

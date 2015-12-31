@@ -13,14 +13,15 @@
 	width: 28%;
 }
 
-#navlogo
-{
-	padding-left: 10%;
-}
-
 #nav li
 {
 	padding-left: 5%;
+}
+
+#navlogo
+{
+	margin-left: 39%;
+	margin-top: 2%;
 }
 
 #maindb
@@ -33,14 +34,15 @@
 {
 	float: left;
 	margin-left: 15%;
-	margin-top: 12%;
+	margin-top: 5%;
 }
 
 #selectdb
 {
 	margin-left: 40%;
-	margin-top: 35%;
+	margin-top: 8%;
 }
+
 .mainoption p
 {
 	padding-left: 10%;
@@ -48,19 +50,10 @@
 
 #header
 {
-	position: fixed;
 	margin-top: 0;
-	padding-left: 28%;
-	height: 110px;
+	height: 108px;
 	width: 100%;
 	background-color: #1E88E5;
-}
-
-#header h4
-{
-position: absolute;
-top: 20px;
-right: 35%;
 }
 
 #header i
@@ -68,4 +61,33 @@ right: 35%;
 	position: absolute;
 	top: 12px;
 	left: 30%;
+}
+
+#intro
+{
+	margin-left: 24%;
+	margin-top: 5%;
+}
+
+.form
+{
+	margin-left: 29%;
+	margin-top: 2%;
+}
+
+tr, td
+{
+	border: 1px solid black;
+}
+
+.content
+{
+	margin-left: 1px;
+	padding: 2%;
+	float: left;
+}
+
+#liensbc
+{
+	margin-left: 30%;
 }

@@ -15,12 +15,14 @@
 			require('config.php');
 		?>
     <div class="row">
+
       <div class="col s5">
         <!--////// SIDE NAVBAR ///////-->
+
         <ul id="nav" class="side-nav fixed">
-        	<img id="navlogo" class="responsive-img" src="img/logomyphp.png">
+          
 		<ul class="collapsible collapsible-accordion">
-        	<li class="bold blue darken-1"><a href="#"><i class="tiny material-icons">library_add</i> Nouvelle base de données</a></li>
+        	<li class="collapsible-header waves-effect waves-blue darken-1"><a href="form.php"><i class="tiny material-icons">library_add</i> Nouvelle base de données</a></li>
 			<?php if(isset($db))
 			{
 				display_db($db);
@@ -30,13 +32,29 @@
 		</ul>
       </div>
       <div id="header">
-      	<i class="large material-icons">library_books</i>
-      	<h4> Bases de données </h4>
+        <div>
+      	<i class="large material-icons headerdiv">library_books</i>
       	</div>
-
+        <div class="headerdiv">
+          <a href="index.php">
+            <img id="navlogo" class="responsive-img" src="img/logomyphp.png">
+          </a>
+</div>
+</div>
+<!-- Welcome breadcrumb -->
+<nav>
+<div class="nav-wrapper deep-purple accent-1">
+      <div class="col s12">
+        <div id="liensbc">
+        <?php welcome();?>
+      </div>
+      </div>
+    </div>
+</nav>
       	<!--////// MAIN BODY  //////-->
       <div id="mainbody" class="col s7">
-        <div id="maindb">
+        <!--<div id="intro" class="tohide"><h5> Utilisez le menu de gauche pour naviguer<br /> dans les bases de données</h5></div>-->
+        <div id="maindb" class="collection">
         	<div id="selectdb">
         		<h5 id="selection">Utilisez le menu de gauche pour naviguer<br /> dans les bases de données</h5>
         	</div>
@@ -51,6 +69,9 @@
         <div class="mainoption">
         	<i id="supprimer" class="large material-icons">warning</i>
         	<p> Supprimer </p>
+          <form action="erase.php" method="post">
+  <button type="submit" name="getDbName()" value="Your_Value">Supprimer</button>
+</form>
         </div>
         	</div>
       </div>
