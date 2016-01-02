@@ -43,6 +43,12 @@
                 }
             }
         }
+        else if ($action == "tablecontents")
+        {
+            $dbname = $_GET["db-name"];
+            include("vue/tablecontents.php")
+        }
+
     } 
     else 
     {

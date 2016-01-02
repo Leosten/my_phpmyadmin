@@ -6,7 +6,7 @@
 
         private function __construct($host, $user, $pwd)
         {
-            $this->current = new PDO('mysql:host='.$host.';charset=utf8', $user, $pwd);
+            $this->current = new PDO('mysql:host=localhost;charset=utf8', 'root', '');
             $this->current->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
 
