@@ -1,10 +1,6 @@
 <div class="row">
-    <div id="header">
-        <i class="large material-icons">library_books</i>
-        <h4> Bases de données </h4>
-    </div>
     <!--////// MAIN BODY  //////-->
-    <div id="mainbody" class="col s7">
+    <div class="col s7 mainbody">
         <?php if(isset($result)) { ?>
             <div class="success"><?=$message ?></div>
         <?php } ?>

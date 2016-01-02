@@ -2,6 +2,7 @@
     require_once("config.php");
     require_once("model/connection.php");
     require_once("model/databases.php");
+    require_once("model/tables.php");
     require_once("fonctions.php");
 
     $connection = getConnection($host, $user, $pwd);
@@ -46,7 +47,8 @@
         else if ($action == "tablecontents")
         {
             $dbname = $_GET["db-name"];
-            include("vue/tablecontents.php")
+            $tablename= $_GET["table-name"];
+            include("vue/tablecontents.php");
         }
 
     } 

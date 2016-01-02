@@ -1,5 +1,7 @@
-<?php require ("model/tables.php");?>
-
+<div id="header">
+        <i class="large material-icons">library_books</i>
+        <h4> Bases de données </h4>
+</div>
 <div class="col s5">
     <!--////// SIDE NAVBAR ///////-->
     <ul id="nav" class="side-nav fixed">

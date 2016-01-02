@@ -1,59 +1,58 @@
-#mainbody
+.mainbody
 {
-	margin-left: 28%;
+  margin-left: 28%;
     margin-top: 20%;
 }
 
 .collapsible-body
 {
-	display: none;
+  display: none;
 }
 
 #nav
 {
-	width: 28%;
+  width: 28%;
 }
 
 #navlogo
 {
-	padding-left: 10%;
+  padding-left: 10%;
 }
 
 #nav li
 {
-	padding-left: 5%;
+  padding-left: 5%;
 }
 
 #maindb
 {
-	display: none;
-	margin-left: 15%;
+  display: none;
+  margin-left: 15%;
 }
 
 .mainoption
 {
-	float: left;
-	margin-left: 15%;
-	margin-top: 12%;
+  float: left;
+  margin-left: 15%;
+  margin-top: 12%;
 }
 
 #selectdb
 {
-	margin-left: 40%;
+  margin-left: 40%;
 }
 .mainoption p
 {
-	padding-left: 10%;
+  padding-left: 10%;
 }
 
 #header
 {
-	position: fixed;
-	margin-top: 0;
-	padding-left: 28%;
-	height: 110px;
-	width: 100%;
-	background-color: #1E88E5;
+  margin-top: 0;
+  padding-left: 28%;
+  height: 110px;
+  width: 100%;
+  background-color: #1E88E5;
 }
 
 #header h4
@@ -65,12 +64,29 @@ right: 35%;
 
 #header i
 {
-	position: absolute;
-	top: 12px;
-	left: 30%;
+  position: absolute;
+  top: 12px;
+  left: 30%;
 }
 
-#mainbody h5 
+.mainbody h5 
 {
     text-align: center;
+}
+
+.content
+{
+  margin-left: 1px;
+  padding: 2%;
+  float: left;
+}
+
+.result
+{
+  margin-left: 29%;
+}
+
+.form
+{
+  margin-top: 6%;
 }
