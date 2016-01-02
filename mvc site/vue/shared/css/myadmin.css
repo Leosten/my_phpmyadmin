@@ -17,6 +17,7 @@
 #navlogo
 {
   padding-left: 10%;
+  margin-bottom: 60px;
 }
 
 #nav li
@@ -34,13 +35,21 @@
 {
   float: left;
   margin-left: 15%;
-  margin-top: 12%;
+  margin-top: 5%;
 }
 
 #selectdb
 {
-  margin-left: 40%;
+  margin-left: 28%;
+  padding: 2%;
 }
+
+ #selecttable
+ {
+  padding: 2%;
+  margin-left: 28%
+ }
+
 .mainoption p
 {
   padding-left: 10%;
@@ -71,6 +80,7 @@ right: 35%;
 .mainbody h5 
 {
     text-align: center;
+    padding-top: 2%;
 }
 
 .content

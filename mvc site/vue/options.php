@@ -1,6 +1,6 @@
 <div class="row">
     <!--////// MAIN BODY  //////-->
-    <div class="col s7 mainbody">
+    <div class="result">
         <?php if(isset($result)) { ?>
             <div class="success"><?=$message ?></div>
         <?php } ?>
@@ -8,15 +8,15 @@
             <h5 id="selection"><?=$dbname ?></h5>
         </div>
         <div class="mainoption">
-            <i id="modifier" class="large material-icons">settings</i>
+           <i id="modifier" class="small material-icons">settings</i>
             <p> Modifier </p>
         </div>
         <div class="mainoption">
-            <i id="stats" class="large material-icons">assessment</i>
-            <p> Statistiques </p>
+            <a href=<?php echo "index.php?action=dbstats&db-name=".$dbname;?> class="optionbtn"><i id="stats" class="small material-icons">assessment</i>
+            <p> Statistiques </p></a>
         </div>
         <div class="mainoption">
-            <i id="supprimer" class="large material-icons">warning</i>
+            <i id="supprimer" class="small material-icons">warning</i>
             <p> Supprimer </p>
         </div>
     </div>

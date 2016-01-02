@@ -74,6 +74,10 @@ function welcome()
 				?><a href="#!" class="breadcrumb"><?php echo $_GET["table-name"]; ?></a><?php
 			}
 	}
+	/*else if(isset($_get["action"]))
+	{
+		?><a href="#!" class="breadcrumb"><?php echo $_GET["action"]; ?></a><?php
+	}*/
 	else
 		echo "<a href=\"index.php\" class=\"breadcrumb\">Bienvenue sur My_phpMyAdmin!</a>";
 }

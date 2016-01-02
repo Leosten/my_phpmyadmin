@@ -5,7 +5,7 @@
 <div class="col s5">
     <!--////// SIDE NAVBAR ///////-->
     <ul id="nav" class="side-nav fixed">
-        <img id="navlogo" class="responsive-img" src="vue/shared/img/logomyphp.png">
+        <a id="navlogo" href="index.php"><img class="responsive-img" src="vue/shared/img/logomyphp.png"></a>
         <ul class="collapsible collapsible-accordion">
             <li class="bold blue darken-1"><a href="index.php?action=new-bdd"><i class="tiny material-icons">library_add</i> Nouvelle base de données</a></li>
             <?php

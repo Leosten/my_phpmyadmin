@@ -3,11 +3,12 @@
     require_once("model/connection.php");
     require_once("model/databases.php");
     require_once("model/tables.php");
+    require_once("model/stats.php");
     require_once("fonctions.php");
 
     $connection = getConnection($host, $user, $pwd);
     $databases = getDatabases($connection);
-            
+
     include("vue/shared/header.php");
     include("vue/menu.php");
     include("vue/breadcrumb.php");
@@ -51,7 +52,11 @@
             $tablename= $_GET["table-name"];
             include("vue/tablecontents.php");
         }
-
+        else if ($action == "dbstats")
+        {
+            $dbname = $_GET['db-name'];
+            include("vue/dbstats.php");
+        }
     } 
     else 
     {
