@@ -16,6 +16,7 @@ function display_db($db)
 			<a class="collapsible-header waves-effect waves-blue darken-1"><?php echo $value[0];?></a>
 			<div class="collapsible-body">
 				<ul>
+					<li><a href=<?php echo "index.php?action=add-table&db-name=".$value[0]?>><i class="tiny material-icons">library_add</i> Ajouter une table ...</a></li>
 					<?php display_table($db, $value[0]);?>
 				</ul>
 			</div></li>
@@ -61,5 +62,19 @@ function display_tablecontents($db, $dbname, $tablename)
 		$i++;
 		}
 	}
+}
+
+function welcome()
+{
+	if (isset($_GET["db-name"]))
+	{
+		?><a href="#!" class="breadcrumb"><?php echo $_GET["db-name"]; ?></a><?php
+		if (isset($_GET["table-name"]))
+			{
+				?><a href="#!" class="breadcrumb"><?php echo $_GET["table-name"]; ?></a><?php
+			}
+	}
+	else
+		echo "<a href=\"index.php\" class=\"breadcrumb\">Bienvenue sur My_phpMyAdmin!</a>";
 }
 ?>

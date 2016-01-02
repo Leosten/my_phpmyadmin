@@ -10,6 +10,7 @@
             
     include("vue/shared/header.php");
     include("vue/menu.php");
+    include("vue/breadcrumb.php");
 
     if (isset($_GET["action"]))
     {

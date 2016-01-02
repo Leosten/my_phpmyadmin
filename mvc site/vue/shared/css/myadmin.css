@@ -48,7 +48,6 @@
 
 #header
 {
-  margin-top: 0;
   padding-left: 28%;
   height: 110px;
   width: 100%;
@@ -90,3 +89,12 @@ right: 35%;
 {
   margin-top: 6%;
 }
+
+#liensbc
+{
+  margin-left: 29%;
+}
+
+ i.material-icons {
+      vertical-align: middle;
+ }

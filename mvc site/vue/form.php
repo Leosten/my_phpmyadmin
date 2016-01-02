@@ -1,6 +1,6 @@
     <!--////// MAIN BODY  //////-->
     <div class="form">
-        <div class="collection result"
+        <div class="collection result">
             <h5>Créer une nouvelle base de données</h5>
             <?php if (isset($message)){ ?>
                 <div class="error">hu<?=$message ?></div>
