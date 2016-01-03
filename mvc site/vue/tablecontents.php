@@ -5,9 +5,10 @@
 <div id="selecttable">
 <h5><?php echo $_GET['table-name'];?></h5>
 </div>
+<div class="result">
+	<?php stats_tablelength($connection, $dbname, $tablename);?>
+</div>
 <div class="collection result">
-	    <?php
-			display_tablecontents($connection, $dbname, $tablename);
-		?>
+	<?php display_tablecontents($connection, $dbname, $tablename);?>
 	</div>
 </div>

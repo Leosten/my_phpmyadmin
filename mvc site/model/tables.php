@@ -1,8 +1,9 @@
 <?php 
-    function getTables($connection, $name){
-        $result = $db->query("SHOW TABLES FROM `".$dbname."`");
-        return $result->fetchAll();
-    }
+function getTables($connection, $name)
+{
+	$result = $db->query("SHOW TABLES FROM `".$dbname."`");
+	return $result->fetchAll();
+}
 
 function display_db($db)
 {
@@ -64,6 +65,7 @@ function display_tablecontents($db, $dbname, $tablename)
 	}
 }
 
+
 function welcome()
 {
 	if (isset($_GET["db-name"]))
@@ -74,10 +76,6 @@ function welcome()
 				?><a href="#!" class="breadcrumb"><?php echo $_GET["table-name"]; ?></a><?php
 			}
 	}
-	/*else if(isset($_get["action"]))
-	{
-		?><a href="#!" class="breadcrumb"><?php echo $_GET["action"]; ?></a><?php
-	}*/
 	else
 		echo "<a href=\"index.php\" class=\"breadcrumb\">Bienvenue sur My_phpMyAdmin!</a>";
 }

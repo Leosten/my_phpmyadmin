@@ -6,4 +6,6 @@
 	<br />
 	<br />
 	<?php stats_dbdate($connection, $dbname);?>
+	<br />
+	<?php stats_dbmemory($connection, $dbname);?>
 </div>
