@@ -57,8 +57,13 @@
             $dbname = $_GET['db-name'];
             include("vue/dbstats.php");
         }
-    } 
-    else 
+        else if($action == "add-table")
+        {
+            $dbname = $_GET['db-name'];
+            include("vue/dbstats.php");
+        }
+    }
+    else
     {
         
     }

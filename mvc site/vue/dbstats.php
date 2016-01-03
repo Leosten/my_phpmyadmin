@@ -3,4 +3,7 @@
 </div>
 <div class="collection result">
 	<?php stats_dbtables($connection, $dbname);?>
+	<br />
+	<br />
+	<?php stats_dbdate($connection, $dbname);?>
 </div>

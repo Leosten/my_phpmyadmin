@@ -105,6 +105,12 @@ right: 35%;
   margin-left: 29%;
 }
 
- i.material-icons {
+i.material-icons 
+{
       vertical-align: middle;
- }
+}
+
+.result
+{
+padding: 2%;
+}

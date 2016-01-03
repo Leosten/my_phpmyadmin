@@ -18,3 +18,19 @@ function stats_dbtables($db, $dbname)
 				echo $dbname. "Ne contient aucune table";
 		}
 }
+
+function stats_dbdate($db, $dbname)
+{
+	$result = $db->query("SELECT create_time FROM information_schema.tables WHERE TABLE_SCHEMA='".$dbname."'");
+	$aff = $result->fetch();
+	if (isset($aff))
+	{
+		echo "Date de création: ";
+		echo "<h5>$aff[0]</h5>";
+	}
+}
+
+function stats_dbmemory($db, $dbname)
+{
+	
+}
