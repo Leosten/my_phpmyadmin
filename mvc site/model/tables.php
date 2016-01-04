@@ -17,7 +17,7 @@ function display_db($db)
 			<a class="collapsible-header waves-effect waves-blue darken-1"><?php echo $value[0];?></a>
 			<div class="collapsible-body">
 				<ul>
-					<li><a href=<?php echo "index.php?action=add-table&db-name=".$value[0]?>><i class="tiny material-icons">library_add</i> Ajouter une table ...</a></li>
+					<li><a href=<?php echo "index.php?action=new-table&db-name=".$value[0]?>><i class="tiny material-icons">library_add</i> Ajouter une table ...</a></li>
 					<?php display_table($db, $value[0]);?>
 				</ul>
 			</div></li>
