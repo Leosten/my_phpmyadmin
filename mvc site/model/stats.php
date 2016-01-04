@@ -12,7 +12,7 @@ function stats_dbtables($db, $dbname)
 					{
 						$i++;
 					}
-			echo  "<span>".$dbname." contient <h5>".$i."</h5> tables.</span>";
+				echo  "<span>".$dbname." contient <h5>".$i."</h5> tables.</span>";
 			}
 			else
 				echo $dbname. "Ne contient aucune table";
@@ -53,5 +53,5 @@ function stats_tablelength($db, $dbname, $tablename)
 				$tablelength++;
 			}
 	}
-	echo $tablelength." lignes";
+	echo "<p>".$tablelength." lignes</p>";
 }
