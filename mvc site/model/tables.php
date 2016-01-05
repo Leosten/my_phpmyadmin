@@ -65,6 +65,37 @@ function display_tablecontents($db, $dbname, $tablename)
 	}
 }
 
+function tab_display_tablecontents($db, $dbname, $tablename)
+{
+	if ($db)
+	{
+		$i = 0;
+		$n = 0;
+		$coltitle = $db->query("SHOW COLUMNS FROM ".$dbname.".".$tablename);
+		$count = count($coltitle);
+		$result = $db->query("SELECT * FROM ".$dbname.".".$tablename);
+		while ($aff = $result->fetch())
+		{
+			$i = 0;
+			echo "<tr>";
+			while ($i < $count)
+			{
+				echo "<td>".$aff[$i]."</td>";
+				$i++;
+			}
+			echo "</tr>";
+		}
+	}
+}
+
+function display_tablestruc($db, $dbname, $tablename)
+{
+	$i = 0;
+	$result = $db->query("DESCRIBE ".$dbname.".".$tablename);
+	foreach ($result as $value)
+		echo "<th>".$value[0]."</th>";
+	
+}
 
 function welcome()
 {
@@ -78,5 +109,18 @@ function welcome()
 	}
 	else
 		echo "<a href=\"index.php\" class=\"breadcrumb\">Bienvenue sur My_phpMyAdmin!</a>";
+}
+
+function display_inputadd($db, $dbname, $tablename)
+{
+	$coltitle = $db->query("DESCRIBE ".$dbname.".".$tablename);
+	$colaff = $coltitle->fetch();
+	$count = count($coltitle);
+	?><span><?php
+	foreach ($coltitle as $value)
+	{
+		echo $value[0].": <input type=text name=".$value[0].">";
+	}
+	?></span><?php
 }
 ?>

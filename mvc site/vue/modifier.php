@@ -1,5 +1,14 @@
-<div class="formm">
-<form action=<?php echo "index.php?action=add-data&db-name=".$dbname."&table-name=".$tablename?> method="POST">
+<div class="result">
+<h5>Ajouter une entrée dans: <?=$dbname?></h5>
+<table>
+	<thead>
+		<?php display_tablestruc($connection, $dbname, $tablename);?>
+	</thead>
+</table>
+
+<?php display_inputadd($connection, $dbname, $tablename);?>
+
+<!--<form action=<?php echo "index.php?action=add-data&db-name=".$dbname."&table-name=".$tablename?> method="POST">
 	<table id="table">
 				<thead>
 					<tr>
@@ -17,5 +26,5 @@
 				</tbody>
 	</table>
 	<p><input name="submit" type="submit" value="Créer"/></p>
-</form>
+</form>-->
 </div>

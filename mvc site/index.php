@@ -64,6 +64,7 @@
         {
             $dbname = $_GET["db-name"];
             include("vue/createtable.php");
+            include("vue/dbstats.php");
         }
         else if ($action == "new-colone")
         {
@@ -80,7 +81,7 @@
                 $nomcol = $_POST["nomcol"];
                 $tablename = $_GET["table-name"];
                 echo "$type";
-                $result = add_colone($connection, $tablename, $dbname, $nomcol, $type);
+                $result = add_colone($connection, $dbname, $tablename, $type, $nomcol);
             }
         }
         else if($action == "add-table")

@@ -1,4 +1,5 @@
-<div class="formm">
+<div class="result">
+	<h5> Créer une nouvelle table dans: <?= $dbname?></h5>
 <form action=<?php echo "index.php?action=add-table&db-name=".$dbname?> method="POST">
 	<p>
 		<label>Nom de la table : <input type="text" name="table" /></label>
