@@ -64,7 +64,21 @@
         {
             $dbname = $_GET["db-name"];
             include("vue/createtable.php");
+            include("vue/formRemoveDB.php");
             include("vue/dbstats.php");
+        }
+        else if($action = "removed-db")
+        {
+            $dbname = $_GET['db-name'];
+            $result = remove_db($connection, $dbname);
+            if ($result)
+                {
+                    echo "<h5 class=selection>La base ".$dbname." a bien été supprimée</h5>";
+                }
+                else 
+                {
+                    echo "<h5 class=selection>la base ".$dbname." n'a pas pu être supprimée</h5>";
+                }
         }
         else if ($action == "new-colone")
         {

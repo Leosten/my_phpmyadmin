@@ -1,4 +1,4 @@
-<div class="result">
+<div class="result collection">
 	<h5> Créer une nouvelle table dans: <?= $dbname?></h5>
 <form action=<?php echo "index.php?action=add-table&db-name=".$dbname?> method="POST">
 	<p>
