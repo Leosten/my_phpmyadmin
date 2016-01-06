@@ -80,6 +80,8 @@
             $tablename = $_GET["table-name"];
             include("vue/modifier.php");
         }
+        else if ($action == "remove-table")
+            include ("vue/removetable.php");
         else if ($action == "add-data")
         {
             $key = $_POST["key"];
