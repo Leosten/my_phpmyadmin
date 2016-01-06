@@ -31,7 +31,7 @@
         }
         else if ($action == "add-db")
         {
-                include("vue/createdbconfirm.php");
+            include("vue/createdbconfirm.php");
         }
         else if ($action == "tablecontents")
         {
@@ -58,34 +58,21 @@
         }
         else if ($action == "new-colone")
         {
-            $dbname = $_GET["db-name"];
+            $dbname = $_GET['db-name'];
             $tablename = $_GET["table-name"];
             include("vue/createcolone.php");
         }
         else if ($action == "add-colone")
         {
-            if (isset($_POST["nomcol"]))
-            {
-                $dbname = $_GET["db-name"];
-                $type = $_POST["type"];
-                $nomcol = $_POST["nomcol"];
-                $tablename = $_GET["table-name"];
-                echo "$type";
-                $result = add_colone($connection, $dbname, $tablename, $type, $nomcol);
-            }
+            $dbname = $_GET['db-name'];
+            $tablename = $_GET["table-name"];
+            include ("vue/columnconfirm.php");
         }
         else if ($action == "add-table")
         {
-            if (isset($_POST["table"]))
-            {
-                $table = $_POST["table"];
-                $dbname = $_GET["db-name"];
-                $result = add_table($connection, $table, $dbname);
-                if ($result)
-                    $message = "<h5 class=selection>la table".$table."a été créée</h5>";
-                else
-                    $message = "<h5 class=selection>la table".$table."n'a pas pu être créée<h5>";
-            }
+            $dbname = $_GET["db-name"];
+            $tablename = $_POST["table"];
+            include ("vue/tableconfirm.php");
         }
         else if ($action == "add-line")
         {
