@@ -1,0 +1,47 @@
+<?php
+    $dbname = $_GET['db-name'];?>
+
+<div class="result collection">
+    <?php
+    if (isset($_GET['confirm']))
+        {
+            if (add_database($connection, $dbname))
+                {
+                    echo "<h5>La base ".$dbname." a bien été créée</h5>";
+                    echo "<p> Redirection ... </p>"
+                    ?>
+                <meta http-equiv="refresh" content="2; url=index.php" />
+                <div class="preloader-wrapper active">
+                     <div class="spinner-layer spinner-red-only">
+                        <div class="circle-clipper left">
+                         <div class="circle"></div>
+                </div><div class="gap-patch">
+                 <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                <div class="circle"></div>
+                </div>
+                </div>
+                </div>
+                    <?php
+                }
+            else
+            {
+                echo "<h5>La base ".$dbname." n'a pu être créée!</h5>";
+                echo "<p>Redirection ... </p>"
+                ?>
+                <meta http-equiv="refresh" content="2; url=index.php" />
+                <div class="preloader-wrapper active">
+                     <div class="spinner-layer spinner-red-only">
+                        <div class="circle-clipper left">
+                         <div class="circle"></div>
+                </div><div class="gap-patch">
+                 <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                <div class="circle"></div>
+                </div>
+                </div>
+                </div>
+                    <?php
+            }
+?>
+</div>

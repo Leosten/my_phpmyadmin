@@ -2,7 +2,6 @@
 
     function add_database($connection, $dbname)
     {
-        $dbname = $_POST["dbname"];
         return $connection->query("CREATE DATABASE IF NOT EXISTS `$dbname`");
     }
 

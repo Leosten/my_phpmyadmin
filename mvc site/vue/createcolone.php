@@ -1,6 +1,5 @@
 
 <div class= "result">
-		<?php tab_display_tablecontents($connection, $dbname, $tablename);?>
 <table>
 	<thead>
 		<?php display_tablestruc($connection, $dbname, $tablename);?>

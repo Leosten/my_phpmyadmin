@@ -94,7 +94,6 @@ function display_tablestruc($db, $dbname, $tablename)
 	$result = $db->query("DESCRIBE ".$dbname.".".$tablename);
 	foreach ($result as $value)
 		echo "<th>".$value[0]."</th>";
-	
 }
 
 function welcome()

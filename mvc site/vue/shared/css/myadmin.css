@@ -95,7 +95,7 @@ right: 35%;
 
 .form
 {
-  margin-top: 6%;
+  margin-top: 3%;
 }
 
 #liensbc
@@ -113,3 +113,13 @@ i.material-icons
 padding: 2%;
 }
 
+#welcomemsg
+{
+  margin-top: 15%;
+  margin-left: 35%;
+}
+
+.tablebtn
+{
+  margin-left: 39%
+}
